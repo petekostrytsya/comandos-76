@@ -4,17 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>ComandDos</title>
   </head>
   <body>
     <header class="header">
-      <a href="">link</a>
+      <a href="" class="header-link animate__animated animate__backInRight"
+        >link</a
+      >
       <button>click me</button>
     </header>
     <main>
       <section class="hero">
-        <h1>command project</h1>
+        <h1 class="animate__animated animate__backInRight">command project</h1>
         <p>test</p>
         <button>click me</button>
       </section>
@@ -27,6 +33,42 @@
           cupiditate maiores vero earum adipisci?
         </p>
       </section>
+      <section>
+        <div
+          class="box wow animate__animated animate__backInLeft"
+          data-wow-duration="8s"
+          data-wow-delay="5s"
+        >
+          <img src="./img/cat1.jpg" alt="" width="500" />
+        </div>
+
+        <div
+          class="box wow animate__animated animate__backInRight"
+          data-wow-duration="4s"
+        >
+          <img src="./img/cat2.jpg" alt="" width="500" />
+        </div>
+
+        <div class="box wow animate__animated animate__backInLeft">
+          <img src="./img/cat3.jpg" alt="" width="500" />
+        </div>
+
+        <div
+          class="wow animate__animated animate__rotateInUpRight"
+          data-wow-delay="3s"
+        >
+          <img src="./img/cat2.jpg" alt="" width="500" />
+        </div>
+
+        <div class="box wow animate__animated animate__backInRight">
+          <img src="./img/dog1.webp" alt="" width="500" />
+        </div>
+      </section>
     </main>
+
+    <script src="./js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>
